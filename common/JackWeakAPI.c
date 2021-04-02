@@ -45,7 +45,7 @@ static HMODULE libjack_handle = 0;
 static void *libjack_handle = 0;
 #endif
 #ifndef WIN32
-static void __attribute__((constructor)) tryload_libjack()
+static void tryload_libjack()
 #else
 void tryload_libjack()
 #endif
